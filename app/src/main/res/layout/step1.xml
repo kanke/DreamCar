@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@android:color/transparent">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/app2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/app2" />
+
+    <ImageButton android:id="@+id/info"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start" android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/info28"
+        android:background="@android:color/transparent" />
+
+
+    <ImageButton android:id="@+id/chat"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/user7"
+        android:background="@android:color/transparent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:layout_marginStart="74dp">
+
+
+        <ImageButton android:id="@+id/autotrader"
+            android:layout_width="168dp" android:layout_height="80dp"
+            android:layout_gravity="top|start" android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/autotrader"
+            android:background="@android:color/transparent" />
+
+
+        <ImageButton android:id="@+id/gumtree"
+            android:layout_width="168dp" android:layout_height="80dp"
+            android:layout_gravity="top|end"
+            android:src="@drawable/gumtree"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_alignTop="@+id/autotrader"
+            android:layout_alignEnd="@+id/audi" />
+
+        <ImageButton android:id="@+id/audi"
+            android:layout_width="168dp" android:layout_height="80dp"
+            android:layout_gravity="bottom|left"
+            android:src="@drawable/audi"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
